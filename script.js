@@ -1,18 +1,25 @@
-/*comenting addEvcentListener to avoid multiple bindings
-If you want to use it, uncomment the line below
-if we are not deferring the script, we can use DOMContentLoaded
-to ensure the DOM is fully loaded before running the script*/
-// document.addEventListener("DOMContentLoaded", () => {
-const button = document.getElementById("clickHereButton");
-const output = document.getElementById("output");
-button.addEventListener("click", () => {
-  const msg = [
-    "Hello, world!",
-    "Button Clicked!",
-    "You clicked button!!",
-    "Welcome to our website!",
-    "Enjoy your stay!",
-  ];
-  output.textContent = msg[Math.floor(Math.random() * msg.length)];
+//getting elements by id from the DOM
+const heading = document.getElementById("main-heading");
+const changeTextBtn = document.getElementById("changeTextBtn");
+
+//get elements by class name or querySelectorAll
+const items = document.querySelectorAll(".item");
+
+//change heading text on button click
+changeTextBtn.addEventListener("click", () => {
+  heading.textContent = "Heading Text updated via DOM!";
 });
-// });
+
+//Highlight items on click
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("highlight");
+  });
+});
+
+// Highlight all items
+document.getElementById("highlightItemsBtn").addEventListener("click", () => {
+  items.forEach((item) => {
+    item.classList.add("highlight");
+  });
+});

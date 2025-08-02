@@ -1,6 +1,5 @@
 body {
   font-family: "Arial, sans-serif";
-  text-align: center;
   margin-top: 50px;
   background-color: rgba(224, 255, 173, 0.445);
 }
@@ -17,4 +16,14 @@ button {
 
 button:hover {
   background-color: darkblue;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  cursor: pointer;
 }
