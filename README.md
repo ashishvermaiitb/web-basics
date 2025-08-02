@@ -5,10 +5,12 @@ This is a basic HTML/CSS/JS app created for practicing JavaScript DOM manipulati
 ## Features
 
 - HTML structure with linked CSS and JS
-- Click button to display a message
 - Clean folder structure for frontend learning
 
 ## How to Run
 
 1. Open `index.html` in a browser.
-2. Click the "Click Here" button.
+
+---
+
+> This project is a structured learning repo. Each concept is learned in an isolated branch with this reusable HTML/CSS/JS base.
