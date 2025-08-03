@@ -1,6 +1,7 @@
 # DOM Practice (html-css-js/practice-dom)
 
 This folder contains hands-on experiments and interview-style questions related to **DOM (Document Object Model)** in JavaScript.
+DOM is a programming interface for web documents.
 
 ## Topics Covered
 
@@ -24,6 +25,10 @@ This folder contains hands-on experiments and interview-style questions related 
 - [ ] Add a new element to the DOM dynamically
 - [ ] Remove an existing element on button click
 - [ ] Toggle a class on click
+- [ ] Compare `innerText`, `textContent`, `innerHTML`
+- [ ] Add new item to DOM via JS
+- [ ] Event Delegation: parent handles child clicks
+- [ ] Event Bubbling and Capturing demo
 
 ## Interview Questions
 
